@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 const cors = require('cors');
 const PORT = process.env.PORT || 8000;
-app.use(cors());
+const corsOptions = require('./config/corsOptions')
+
+app.use(cors(corsOptions));
 
 require('dotenv').config();
 require("./config/mongoose.config"); 
