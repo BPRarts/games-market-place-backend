@@ -1,7 +1,8 @@
 const allowedOrigins = [
     
     'https://games-market-place.onrender.com'
-   
+    
+    
     
 ]
 
